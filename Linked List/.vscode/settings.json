@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "new": "cpp",
+    "iostream": "cpp",
+    "unordered_map": "cpp",
+    "ostream": "cpp",
+    "chrono": "cpp",
+    "random": "cpp",
+    "limits": "cpp",
+    "valarray": "cpp"
+  }
+}
