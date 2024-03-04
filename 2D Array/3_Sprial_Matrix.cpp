@@ -21,6 +21,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix)
 
     while (count < total)
     {
+        // Print Starting Row
         for (int i = sCol; count < total && i <= eCol; i++)
         {
             ans.push_back(matrix[sRow][i]);
@@ -28,6 +29,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix)
         }
         sRow++;
 
+        // Print Ending Column
         for (int i = sRow; count < total && i <= eRow; i++)
         {
             ans.push_back(matrix[i][eCol]);
@@ -35,6 +37,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix)
         }
         eCol--;
 
+        // Print Ending Row
         for (int i = eCol; count < total && i >= sCol; i--)
         {
             ans.push_back(matrix[eRow][i]);
@@ -42,6 +45,7 @@ vector<int> spiralOrder(vector<vector<int>> &matrix)
         }
         eRow--;
 
+        // Print Starting Column
         for (int i = eRow; count < total && i >= sRow; i--)
         {
             ans.push_back(matrix[i][sCol]);
